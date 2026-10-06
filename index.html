@@ -3,106 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hithesh K | Embedded AI & Full-Stack Engineer</title>
+  <meta name="description" content="Hithesh K — Embedded Systems / Firmware Engineer focused on embedded C/C++, ESP32, RTOS, IoT, VLSI and hardware-software integration." />
+  <meta name="keywords" content="Embedded Systems, Firmware Engineer, Embedded C, C++, ESP32, STM32, RTOS, IoT, VLSI, Python, Verilog" />
+  <meta name="author" content="Hithesh K" />
+  <title>Hithesh K | Embedded Systems / Firmware Engineer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;600;700&display=swap');
-    body {
-      font-family: 'Outfit', sans-serif;
-      background-color: #050505;
-      color: #e5e5e5;
-    }
-    .font-display { font-family: 'Space Grotesk', sans-serif; }
-    
-    /* Premium Glass UI */
-    .glass-panel {
-      background: rgba(20, 20, 22, 0.6);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    }
-    .glass-panel:hover {
-      border-color: rgba(16, 185, 129, 0.3);
-      transform: translateY(-2px);
-      transition: all 0.4s ease;
-    }
-    
-    /* Neon Text Gradients */
-    .text-gradient {
-      background: linear-gradient(to right, #10b981, #06b6d4, #3b82f6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-    /* Glowing Orbs Background */
-    .orb-1 { position: fixed; top: -10%; left: -10%; width: 50vw; height: 50vw; background: radial-gradient(circle, rgba(16,185,129,0.1) 0%, rgba(0,0,0,0) 70%); z-index: -1; pointer-events: none; }
-    .orb-2 { position: fixed; bottom: -20%; right: -10%; width: 60vw; height: 60vw; background: radial-gradient(circle, rgba(6,182,212,0.08) 0%, rgba(0,0,0,0) 70%); z-index: -1; pointer-events: none; }
-    
-    .project-img-wrapper { overflow: hidden; border-radius: 0.75rem; }
-    .project-img-wrapper img { transition: transform 0.7s ease; }
-    .glass-panel:hover .project-img-wrapper img { transform: scale(1.05); }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="antialiased relative selection:bg-emerald-500 selection:text-white">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
 
-  <div class="orb-1"></div>
-  <div class="orb-2"></div>
-
-  <nav class="fixed w-full z-50 glass-panel border-b-0 border-white/10 top-0">
+  <nav class="fixed w-full z-50 glass-panel top-0">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="#" class="font-display font-bold text-xl tracking-wider text-white flex items-center gap-2">
-        <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+      <a href="#" class="font-display font-bold text-xl tracking-wider text-white">
         HITHESH<span class="text-emerald-500">.</span>K
       </a>
+
       <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
-        <a href="#about" class="hover:text-emerald-400 transition-colors">Profile</a>
-        <a href="#skills" class="hover:text-emerald-400 transition-colors">Core Skills</a>
-        <a href="#experience" class="hover:text-emerald-400 transition-colors">Experience</a>
-        <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
       </div>
-      <a href="mailto:hitheshediga18@gmail.com" class="px-5 py-2.5 rounded-full bg-white/5 hover:bg-emerald-500 hover:text-black border border-white/10 hover:border-emerald-500 transition-all font-medium text-sm">
-        Hire Me
+
+      <a href="mailto:hitheshediga18@gmail.com" class="px-5 py-2.5 rounded-full bg-white/5 hover:bg-emerald-500 hover:text-black border border-white/10 transition-all font-medium text-sm">
+        Contact
       </a>
     </div>
   </nav>
 
   <main class="pt-32 pb-24 px-6 max-w-7xl mx-auto space-y-32">
 
-    <!-- HERO SECTION (Updated with CV Download) -->
+    <!-- HERO -->
     <section id="about" class="grid lg:grid-cols-2 gap-16 items-center">
       <div class="space-y-8 order-2 lg:order-1">
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel text-xs font-medium text-emerald-400 border-emerald-500/20">
-          <i data-lucide="zap" class="w-4 h-4"></i> Available for Opportunities
+          <i data-lucide="cpu" class="w-4 h-4"></i>
+          Embedded Systems / Firmware Engineer
         </div>
-        
+
         <h1 class="text-5xl sm:text-7xl font-display font-bold leading-tight">
-          Bridging <span class="text-gradient">Hardware</span> & <br>Intelligent <span class="text-gradient">Software.</span>
+          Building reliable <span class="text-gradient">embedded systems</span> from hardware to software.
         </h1>
-        
-        <p class="text-lg text-gray-400 leading-relaxed max-w-xl">
-          I am an Electronics & Communication Engineering undergraduate specializing in Embedded Systems, IoT, Computer Vision, and Full-Stack Development. I build intelligent automation systems, digital twins, and secure, scalable architectures.
+
+        <p class="text-lg text-gray-400 leading-relaxed max-w-2xl">
+          Electronics & Communication Engineering graduate focused on embedded firmware and
+          hardware-software integration. Hands-on experience with ESP32/Arduino systems,
+          sensor interfacing, real-time decision logic, GPS/GSM, IoT connectivity,
+          computer vision, and EV battery telemetry.
         </p>
 
         <div class="flex flex-wrap gap-4 pt-4">
-          <a href="#projects" class="px-8 py-4 rounded-xl bg-emerald-500 text-black font-bold hover:bg-emerald-400 transition-colors flex items-center gap-2">
+          <a href="#projects" class="px-7 py-4 rounded-xl bg-emerald-500 text-black font-bold hover:bg-emerald-400 transition-colors flex items-center gap-2">
             View Projects <i data-lucide="arrow-down-right" class="w-5 h-5"></i>
           </a>
-          <!-- NEW DOWNLOAD CV BUTTON -->
-          <a href="resume.pdf" download="Hithesh_K_Resume.pdf" class="px-8 py-4 rounded-xl glass-panel font-medium text-emerald-400 hover:bg-emerald-500 hover:text-black flex items-center gap-2 transition-colors border border-emerald-500/30">
-            <i data-lucide="file-text" class="w-5 h-5"></i> Download CV
+
+          <a href="resume.pdf" download="Hithesh_K_Resume.pdf" class="px-7 py-4 rounded-xl glass-panel font-medium text-emerald-400 hover:bg-emerald-500 hover:text-black flex items-center gap-2 transition-colors border border-emerald-500/30">
+            <i data-lucide="file-text" class="w-5 h-5"></i> Download Resume
           </a>
-          <a href="https://github.com/hithesh-ediga" target="_blank" class="px-8 py-4 rounded-xl glass-panel font-medium hover:text-emerald-400 flex items-center gap-2 transition-colors">
+
+          <a href="https://github.com/hithesh-ediga" target="_blank" rel="noopener noreferrer" class="px-7 py-4 rounded-xl glass-panel font-medium hover:text-emerald-400 flex items-center gap-2 transition-colors">
             <i data-lucide="github" class="w-5 h-5"></i> GitHub
           </a>
         </div>
 
-        <div class="pt-8 flex gap-8 border-t border-white/10 text-sm text-gray-400">
-          <div class="flex items-center gap-2">
-            <i data-lucide="phone" class="w-4 h-4 text-emerald-500"></i> 7349403612
+        <div class="pt-8 grid sm:grid-cols-3 gap-4 border-t border-white/10">
+          <div>
+            <p class="text-xs text-gray-500 uppercase tracking-wider">Education</p>
+            <p class="text-sm text-gray-300 mt-1">B.E. ECE • 2026</p>
           </div>
-          <div class="flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-emerald-500"></i> hitheshediga18@gmail.com
+          <div>
+            <p class="text-xs text-gray-500 uppercase tracking-wider">CGPA</p>
+            <p class="text-sm text-gray-300 mt-1">7.60 / 10</p>
+          </div>
+          <div>
+            <p class="text-xs text-gray-500 uppercase tracking-wider">Location</p>
+            <p class="text-sm text-gray-300 mt-1">Bengaluru, Karnataka</p>
           </div>
         </div>
       </div>
@@ -110,219 +90,259 @@
       <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
         <div class="relative w-72 h-[400px] sm:w-96 sm:h-[500px]">
           <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500 to-cyan-500 rounded-3xl blur-2xl opacity-20"></div>
-          <img src="IMG_8742.jpg" alt="Hithesh K" class="relative w-full h-full object-cover rounded-3xl border border-white/10 shadow-2xl z-10 grayscale hover:grayscale-0 transition-all duration-700" />
-          
-          <div class="absolute -bottom-6 -left-6 glass-panel p-4 rounded-2xl z-20 flex items-center gap-4 border-emerald-500/30 shadow-xl shadow-emerald-500/10 animate-bounce" style="animation-duration: 3s;">
+          <img src="IMG_8742.jpeg" alt="Hithesh K" class="relative w-full h-full object-cover rounded-3xl border border-white/10 shadow-2xl z-10 grayscale hover:grayscale-0 transition-all duration-700" />
+
+          <div class="absolute -bottom-6 -left-6 glass-panel p-4 rounded-2xl z-20 flex items-center gap-4 border-emerald-500/30">
             <div class="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-500">
               <i data-lucide="graduation-cap" class="w-6 h-6"></i>
             </div>
             <div>
-              <p class="text-xs text-gray-400">B.E. ECE • JNNCE</p>
-              <p class="font-bold text-white">CGPA: 7.20</p>
+              <p class="text-xs text-gray-400">JNNCE • VTU</p>
+              <p class="font-bold text-white">CGPA: 7.60</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- COMPREHENSIVE SKILLS MATRIX -->
+    <!-- PROFILE -->
+    <section class="glass-panel rounded-3xl p-8 sm:p-12">
+      <div class="max-w-4xl">
+        <p class="text-emerald-400 text-sm font-mono uppercase tracking-widest mb-4">Profile</p>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-6">Hardware-aware software. Software-aware hardware.</h2>
+        <p class="text-gray-400 leading-relaxed text-lg">
+          I enjoy building systems where firmware, sensors, communication interfaces and
+          software work together reliably. My project work spans autonomous agriculture,
+          vehicle safety and EV battery monitoring, while my technical foundation includes
+          embedded C/C++, microcontrollers, peripherals, RTOS concepts, communication
+          protocols, networking, VLSI design and debugging.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
     <section id="skills" class="space-y-12">
       <div class="text-center space-y-4">
-        <h2 class="text-3xl md:text-5xl font-display font-bold">Engineering <span class="text-gradient">Arsenal</span></h2>
-        <p class="text-gray-400 max-w-2xl mx-auto">A cross-disciplinary skill matrix spanning hardware architecture, artificial intelligence, and secure full-stack software development.</p>
+        <p class="text-emerald-400 text-sm font-mono uppercase tracking-widest">Technical Skills</p>
+        <h2 class="text-3xl md:text-5xl font-display font-bold">Core <span class="text-gradient">Engineering Skills</span></h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+          A resume-aligned skill set centered on embedded firmware, connected devices, digital design and hardware-software integration.
+        </p>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="glass-panel p-8 rounded-2xl space-y-6">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-500">
-            <i data-lucide="cpu" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold mb-2">Embedded & Core ECE</h3>
-            <p class="text-sm text-gray-400 mb-4">Hardware-software co-design, real-time processing, and IoT integration.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono">
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">ESP32 & Arduino</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">VLSI Design</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Analog/Digital Electronics</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">EV Technologies</span>
-            </div>
-          </div>
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="code-2" class="skill-icon text-emerald-400"></i>
+          <h3 class="text-xl font-bold mt-5">Programming</h3>
+          <p class="text-sm text-gray-400 mt-2">Embedded C, C, C++, Python, Verilog</p>
         </div>
 
-        <div class="glass-panel p-8 rounded-2xl space-y-6">
-          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-500">
-            <i data-lucide="brain-circuit" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold mb-2">AI & Computer Vision</h3>
-            <p class="text-sm text-gray-400 mb-4">Implementing intelligent decision making and visual tracking at the edge.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono">
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">OpenCV</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Computer Vision</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Machine Learning Basics</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Automation AI</span>
-            </div>
-          </div>
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="microchip" class="skill-icon text-cyan-400"></i>
+          <h3 class="text-xl font-bold mt-5">Microcontrollers</h3>
+          <p class="text-sm text-gray-400 mt-2">STM32, ESP32, ESP32-CAM, Arduino</p>
         </div>
 
-        <div class="glass-panel p-8 rounded-2xl space-y-6">
-          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-500">
-            <i data-lucide="layers" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold mb-2">Full-Stack Development</h3>
-            <p class="text-sm text-gray-400 mb-4">Building scalable frontends and high-performance backend telemetry engines.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono">
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">React.js</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">FastAPI</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Python & JavaScript</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">WebSockets</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Tailwind CSS</span>
-            </div>
-          </div>
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="activity" class="skill-icon text-blue-400"></i>
+          <h3 class="text-xl font-bold mt-5">Embedded & Firmware</h3>
+          <p class="text-sm text-gray-400 mt-2">GPIO, timers, interrupts, ADC, PWM, DMA, watchdog, register-level I/O, memory layout, state machines, debugging</p>
         </div>
 
-        <div class="glass-panel p-8 rounded-2xl space-y-6">
-          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-500">
-            <i data-lucide="binary" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold mb-2">CS Fundamentals & DSA</h3>
-            <p class="text-sm text-gray-400 mb-4">Strong foundation in algorithmic problem solving and system architecture.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono">
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">C / C++</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Data Structures</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Algorithms</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Object-Oriented Design</span>
-            </div>
-          </div>
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="radio" class="skill-icon text-violet-400"></i>
+          <h3 class="text-xl font-bold mt-5">Protocols</h3>
+          <p class="text-sm text-gray-400 mt-2">UART, SPI, I2C, CAN, GPS, GSM</p>
         </div>
 
-        <div class="glass-panel p-8 rounded-2xl space-y-6 lg:col-span-2">
-          <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-500">
-            <i data-lucide="shield-check" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold mb-2">Networking & Computer Security</h3>
-            <p class="text-sm text-gray-400 mb-4">Ensuring data integrity, secure communications, and robust network protocols for IoT and web applications.</p>
-            <div class="flex flex-wrap gap-2 text-xs font-mono">
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Computer Networks</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">TCP/IP & Sockets</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Cybersecurity Principles</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">Secure API Development</span>
-              <span class="px-3 py-1 bg-white/5 border border-white/10 rounded-full">SQL & Database Security</span>
-            </div>
-          </div>
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="network" class="skill-icon text-sky-400"></i>
+          <h3 class="text-xl font-bold mt-5">Networking & IoT</h3>
+          <p class="text-sm text-gray-400 mt-2">TCP/IP, UDP, sockets, HTTP/HTTPS, REST, WebSockets, MQTT, Wi-Fi, cloud data flow</p>
+        </div>
+
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="binary" class="skill-icon text-amber-400"></i>
+          <h3 class="text-xl font-bold mt-5">VLSI & Digital Design</h3>
+          <p class="text-sm text-gray-400 mt-2">Cadence, RTL, simulation, synthesis flow, FPGA, FSM design, digital electronics</p>
+        </div>
+
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="wrench" class="skill-icon text-rose-400"></i>
+          <h3 class="text-xl font-bold mt-5">Tools</h3>
+          <p class="text-sm text-gray-400 mt-2">Git/GitHub, Linux, VS Code, AutoCAD, PCB prototyping</p>
+        </div>
+
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="scan-eye" class="skill-icon text-emerald-400"></i>
+          <h3 class="text-xl font-bold mt-5">Computer Vision</h3>
+          <p class="text-sm text-gray-400 mt-2">OpenCV, ESP32-CAM integration, camera-based perception</p>
+        </div>
+
+        <div class="glass-panel p-7 rounded-2xl skill-card">
+          <i data-lucide="list-checks" class="skill-icon text-cyan-400"></i>
+          <h3 class="text-xl font-bold mt-5">RTOS Concepts</h3>
+          <p class="text-sm text-gray-400 mt-2">Task scheduling, semaphores, mutexes, queues, real-time firmware architecture</p>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="space-y-12">
-      <h2 class="text-3xl md:text-5xl font-display font-bold">Professional <span class="text-gradient">Experience</span></h2>
-      
+    <!-- EXPERIENCE -->
+    <section id="experience" class="space-y-10">
+      <div>
+        <p class="text-emerald-400 text-sm font-mono uppercase tracking-widest">Experience</p>
+        <h2 class="text-3xl md:text-5xl font-display font-bold mt-2">Hands-on <span class="text-gradient">Engineering</span></h2>
+      </div>
+
       <div class="glass-panel p-8 sm:p-12 rounded-3xl relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-emerald-500 to-cyan-500"></div>
-        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
+        <div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-emerald-500 to-cyan-500"></div>
+
+        <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-8">
           <div>
             <h3 class="text-2xl font-bold text-white">Hardware Engineering Intern</h3>
             <p class="text-emerald-400 font-medium mt-1">Smart EV Charging & Battery Twin Dashboard</p>
           </div>
           <span class="px-4 py-2 rounded-full bg-white/5 text-sm text-gray-300 border border-white/10">Jan 2026 – May 2026</span>
         </div>
+
         <ul class="space-y-4 text-gray-300">
-          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-6 h-6 text-emerald-500 shrink-0"></i> Developed a real-time EV battery monitoring dashboard using React, FastAPI, Python and WebSockets.</li>
-          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-6 h-6 text-emerald-500 shrink-0"></i> Built telemetry streaming for SoC, SoH, temperature and charging-cycle analytics.</li>
-          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-6 h-6 text-emerald-500 shrink-0"></i> Implemented interactive visualizations, charging simulations, and optimized frontend performance for high-frequency live data.</li>
+          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i><span>Built a real-time EV battery monitoring system for battery health, charging behavior and operating parameters.</span></li>
+          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i><span>Developed telemetry pipelines for State of Charge (SoC), State of Health (SoH), temperature and charging-cycle analytics.</span></li>
+          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i><span>Used WebSockets for low-latency real-time data streaming and optimized rendering for high-frequency updates.</span></li>
+          <li class="flex gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i><span>Implemented charging simulations and visualizations to analyze battery behavior across charging scenarios.</span></li>
         </ul>
+
+        <div class="flex flex-wrap gap-2 mt-8 pt-6 border-t border-white/10">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">WebSockets</span><span class="tag">EV Battery Analytics</span>
+        </div>
       </div>
     </section>
 
-    <!-- PROJECTS SHOWCASE -->
+    <!-- PROJECTS -->
     <section id="projects" class="space-y-12">
       <div class="flex flex-col md:flex-row justify-between items-end gap-6">
         <div>
-          <h2 class="text-3xl md:text-5xl font-display font-bold">Featured <span class="text-gradient">Projects</span></h2>
-          <p class="text-gray-400 mt-4 max-w-xl">Deep integrations of hardware sensors, artificial intelligence, and full-stack software.</p>
+          <p class="text-emerald-400 text-sm font-mono uppercase tracking-widest">Projects</p>
+          <h2 class="text-3xl md:text-5xl font-display font-bold mt-2">Featured <span class="text-gradient">Projects</span></h2>
+          <p class="text-gray-400 mt-4 max-w-2xl">Practical systems combining embedded control, sensing, communication, computer vision and cloud-connected monitoring.</p>
         </div>
-        <a href="https://github.com/hithesh-ediga" target="_blank" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-2 font-medium">
-          View all on GitHub <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        <a href="https://github.com/hithesh-ediga" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-2 font-medium">
+          GitHub Profile <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
         </a>
       </div>
 
       <div class="grid lg:grid-cols-3 gap-8">
-        
-        <div class="glass-panel rounded-3xl overflow-hidden flex flex-col h-full group">
-          <div class="project-img-wrapper h-48 sm:h-64 relative bg-gray-900">
-            <img src="https://images.unsplash.com/photo-1586771107565-9610f449a888?q=80&w=1000&auto=format&fit=crop" alt="Agri Rover" class="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
-            <div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-xs font-mono text-emerald-400">AI + Robotics</div>
-          </div>
-          <div class="p-8 flex flex-col flex-grow">
-            <h3 class="text-2xl font-bold mb-3">AI Agricultural Rover</h3>
-            <p class="text-gray-400 text-sm mb-6 flex-grow">Developed an autonomous rover for precision agriculture. Integrated ESP32 camera modules to implement crop monitoring, real-time disease detection, and soil-analysis workflows.</p>
-            <div class="pt-6 border-t border-white/10 flex justify-between items-center">
-              <div class="flex gap-2 text-gray-400">
-                <i data-lucide="cpu" class="w-5 h-5"></i>
-                <i data-lucide="eye" class="w-5 h-5"></i>
-              </div>
-              <a href="https://github.com/hithesh-ediga/ai-agricultural-rover" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-emerald-500 hover:text-black border border-white/10 transition-colors text-sm font-medium flex items-center gap-2">
-                <i data-lucide="github" class="w-4 h-4"></i> Code
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <div class="glass-panel rounded-3xl overflow-hidden flex flex-col h-full group">
-          <div class="project-img-wrapper h-48 sm:h-64 relative bg-gray-900">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="EV Dashboard" class="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
-            <div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-xs font-mono text-cyan-400">Full-Stack</div>
+        <article class="glass-panel rounded-3xl overflow-hidden flex flex-col h-full group">
+          <div class="project-img-wrapper h-48 sm:h-56 relative bg-gray-900">
+            <img src="https://images.unsplash.com/photo-1586771107565-9610f449a888?q=80&w=1000&auto=format&fit=crop" alt="Agricultural rover" class="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
+            <div class="absolute top-4 right-4 project-label">Embedded + AI</div>
           </div>
-          <div class="p-8 flex flex-col flex-grow">
-            <h3 class="text-2xl font-bold mb-3">Smart EV Battery Twin</h3>
-            <p class="text-gray-400 text-sm mb-6 flex-grow">A high-performance digital twin dashboard simulating live EV battery conditions. Built using React for the frontend and FastAPI/WebSockets for continuous telemetry streaming.</p>
-            <div class="pt-6 border-t border-white/10 flex justify-between items-center">
-              <div class="flex gap-2 text-gray-400">
-                <i data-lucide="layout" class="w-5 h-5"></i>
-                <i data-lucide="server" class="w-5 h-5"></i>
-              </div>
-              <a href="https://github.com/hithesh-ediga/smart-ev-dashboard" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-emerald-500 hover:text-black border border-white/10 transition-colors text-sm font-medium flex items-center gap-2">
-                <i data-lucide="github" class="w-4 h-4"></i> Code
-              </a>
+          <div class="p-7 flex flex-col flex-grow">
+            <h3 class="text-2xl font-bold mb-3">AI-Controlled Agricultural Rover</h3>
+            <p class="text-gray-400 text-sm leading-relaxed flex-grow">
+              Autonomous agriculture rover with sensing, embedded control, camera-based perception, IoT connectivity and cloud monitoring. ESP32 firmware handles field sensors and rover control, while ESP32-CAM and Python/OpenCV support crop disease detection and soil-analysis workflows.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="tag">ESP32</span><span class="tag">ESP32-CAM</span><span class="tag">C/C++</span><span class="tag">Python</span><span class="tag">OpenCV</span>
             </div>
+            <a href="https://github.com/hithesh-ediga/ai-agricultural-rover" target="_blank" rel="noopener noreferrer" class="mt-6 px-4 py-3 rounded-lg bg-white/5 hover:bg-emerald-500 hover:text-black border border-white/10 transition-colors text-sm font-medium flex items-center justify-center gap-2">
+              <i data-lucide="github" class="w-4 h-4"></i> View Code
+            </a>
           </div>
-        </div>
+        </article>
 
-        <div class="glass-panel rounded-3xl overflow-hidden flex flex-col h-full group">
-          <div class="project-img-wrapper h-48 sm:h-64 relative bg-gray-900">
-            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1000&auto=format&fit=crop" alt="Safety System" class="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
-            <div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-xs font-mono text-amber-400">Embedded + CV</div>
+        <article class="glass-panel rounded-3xl overflow-hidden flex flex-col h-full group">
+          <div class="project-img-wrapper h-48 sm:h-56 relative bg-gray-900">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="EV battery dashboard" class="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
+            <div class="absolute top-4 right-4 project-label">EV + Telemetry</div>
           </div>
-          <div class="p-8 flex flex-col flex-grow">
-            <h3 class="text-2xl font-bold mb-3">Vehicle Safety System</h3>
-            <p class="text-gray-400 text-sm mb-6 flex-grow">Smart safety platform utilizing MQ3 alcohol sensors and OpenCV. Features automated ignition locking and GPS/GSM emergency alert dispatch for impaired driving detection.</p>
-            <div class="pt-6 border-t border-white/10 flex justify-between items-center">
-              <div class="flex gap-2 text-gray-400">
-                <i data-lucide="shield" class="w-5 h-5"></i>
-                <i data-lucide="radio" class="w-5 h-5"></i>
-              </div>
-              <a href="https://github.com/hithesh-ediga/smart-vehicle-safety-system" target="_blank" class="px-4 py-2 rounded-lg bg-white/5 hover:bg-emerald-500 hover:text-black border border-white/10 transition-colors text-sm font-medium flex items-center gap-2">
-                <i data-lucide="github" class="w-4 h-4"></i> Code
-              </a>
+          <div class="p-7 flex flex-col flex-grow">
+            <h3 class="text-2xl font-bold mb-3">Smart EV Charging & Battery Twin Dashboard</h3>
+            <p class="text-gray-400 text-sm leading-relaxed flex-grow">
+              Real-time EV battery monitoring and analytics system focused on SoC, SoH, temperature and charging-cycle behavior, with WebSocket-based telemetry and charging simulations.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">React</span><span class="tag">WebSockets</span>
             </div>
+            <a href="https://github.com/hithesh-ediga/smart-ev-dashboard" target="_blank" rel="noopener noreferrer" class="mt-6 px-4 py-3 rounded-lg bg-white/5 hover:bg-emerald-500 hover:text-black border border-white/10 transition-colors text-sm font-medium flex items-center justify-center gap-2">
+              <i data-lucide="github" class="w-4 h-4"></i> View Code
+            </a>
           </div>
-        </div>
+        </article>
+
+        <article class="glass-panel rounded-3xl overflow-hidden flex flex-col h-full group">
+          <div class="project-img-wrapper h-48 sm:h-56 relative bg-gray-900">
+            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=1000&auto=format&fit=crop" alt="Vehicle safety system" class="w-full h-full object-cover opacity-70 group-hover:opacity-100" />
+            <div class="absolute top-4 right-4 project-label">Embedded + CV</div>
+          </div>
+          <div class="p-7 flex flex-col flex-grow">
+            <h3 class="text-2xl font-bold mb-3">Drunk Driver Detection & Vehicle Safety System</h3>
+            <p class="text-gray-400 text-sm leading-relaxed flex-grow">
+              Multi-sensor vehicle safety prototype combining an MQ-3 alcohol sensor and OpenCV-based driver detection. Embedded decision logic controls ignition locking, while GPS/GSM modules provide location-aware emergency alerts over UART.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="tag">Arduino/ESP32</span><span class="tag">C/C++</span><span class="tag">MQ-3</span><span class="tag">GPS/GSM</span><span class="tag">OpenCV</span>
+            </div>
+            <a href="https://github.com/hithesh-ediga/smart-vehicle-safety-system" target="_blank" rel="noopener noreferrer" class="mt-6 px-4 py-3 rounded-lg bg-white/5 hover:bg-emerald-500 hover:text-black border border-white/10 transition-colors text-sm font-medium flex items-center justify-center gap-2">
+              <i data-lucide="github" class="w-4 h-4"></i> View Code
+            </a>
+          </div>
+        </article>
 
       </div>
     </section>
 
-    <!-- CERTIFICATIONS & FOOTER -->
-    <footer class="pt-12 border-t border-white/10 text-center space-y-8">
-      <div class="flex flex-wrap justify-center gap-4 text-xs font-mono text-gray-400">
-        <span class="px-3 py-1 rounded-md bg-white/5">FutureSkills Prime Certified</span>
-        <span class="px-3 py-1 rounded-md bg-white/5">NITTE Hackathon '25</span>
-        <span class="px-3 py-1 rounded-md bg-white/5">CMRIT Hackathon '25</span>
+    <!-- EDUCATION -->
+    <section id="education" class="grid lg:grid-cols-2 gap-8">
+      <div class="glass-panel p-8 sm:p-10 rounded-3xl">
+        <p class="text-emerald-400 text-sm font-mono uppercase tracking-widest">Education</p>
+        <h2 class="text-3xl font-display font-bold mt-3">B.E. Electronics & Communication Engineering</h2>
+        <p class="text-gray-300 mt-4">Jawaharlal Nehru National College of Engineering, Shivamogga</p>
+        <p class="text-gray-500 mt-1">Visvesvaraya Technological University (VTU) • 2026</p>
+        <div class="mt-7 flex items-end gap-3">
+          <span class="text-5xl font-display font-bold text-white">7.60</span>
+          <span class="text-gray-400 mb-2">/ 10 CGPA</span>
+        </div>
+        <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+          <div class="rounded-xl bg-white/5 p-4">
+            <p class="text-gray-500">Class XII</p>
+            <p class="font-bold mt-1">87%</p>
+          </div>
+          <div class="rounded-xl bg-white/5 p-4">
+            <p class="text-gray-500">Class X</p>
+            <p class="font-bold mt-1">92%</p>
+          </div>
+        </div>
       </div>
-      <p class="text-gray-500 text-sm">© 2026 Hithesh K. All rights reserved.</p>
+
+      <div class="glass-panel p-8 sm:p-10 rounded-3xl">
+        <p class="text-emerald-400 text-sm font-mono uppercase tracking-widest">Certifications & Activities</p>
+        <div class="space-y-4 mt-6">
+          <div class="achievement"><i data-lucide="badge-check"></i><span>FutureSkills Prime Certification (NASSCOM)</span></div>
+          <div class="achievement"><i data-lucide="trophy"></i><span>NITTE Hackathon (2025)</span></div>
+          <div class="achievement"><i data-lucide="trophy"></i><span>CMRIT Hackathon (2025)</span></div>
+          <div class="achievement"><i data-lucide="medal"></i><span>Karnataka State-Level Sports Tournament</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="glass-panel rounded-3xl p-8 sm:p-12 text-center">
+      <p class="text-emerald-400 text-sm font-mono uppercase tracking-widest">Let's Connect</p>
+      <h2 class="text-3xl md:text-5xl font-display font-bold mt-3">Open to Embedded & Firmware opportunities.</h2>
+      <p class="text-gray-400 max-w-2xl mx-auto mt-5">
+        Interested in Embedded Systems, Firmware Development, BSW, VLSI and IoT roles.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
+        <a href="mailto:hitheshediga18@gmail.com" class="contact-btn"><i data-lucide="mail"></i> Email</a>
+        <a href="https://linkedin.com/in/hithesh-k-ece" target="_blank" rel="noopener noreferrer" class="contact-btn"><i data-lucide="linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/hithesh-ediga" target="_blank" rel="noopener noreferrer" class="contact-btn"><i data-lucide="github"></i> GitHub</a>
+      </div>
+    </section>
+
+    <footer class="pt-10 border-t border-white/10 text-center">
+      <p class="text-gray-500 text-sm">© 2026 Hithesh K • Embedded Systems / Firmware Engineer</p>
     </footer>
 
   </main>
